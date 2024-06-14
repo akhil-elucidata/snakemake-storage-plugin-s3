@@ -137,7 +137,7 @@ class StorageProvider(StorageProviderBase):
                     "mode": "standard",
                 },
             ),
-            verify=False,  # TODO required?
+            verify=True,  # Changed to True to avoid UnverifiedRequest warnings
         )
 
     @classmethod
